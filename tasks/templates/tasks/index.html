@@ -16,6 +16,8 @@
                                 <th>Task</th>
                                 <th>Descrição</th>
                                 <th>Prioridade</th>
+                                <th>Usuário que criou task</th>
+                                <th>Anexos</th>
                                 <th class="text-right">Ações</th>
                             </tr>
                         </thead>
@@ -25,6 +27,8 @@
                                 <td>{{task.name}}</td>
                                 <td>{{task.description}}</td>
                                 <td>{{task.priority}}</td>
+                                <td>{{task.user_who_submitted}}</td>
+                                <td>{{task.files}}</td>
 
                                 <td class="text-right">
                                     <a href="{% url 'tasks:editar' task.id %}"><button class="btn btn-xs btn-success">Editar</button></a>

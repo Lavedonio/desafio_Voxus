@@ -12,6 +12,6 @@ class TaskForm(forms.ModelForm):
             'name',
             'description',
             'priority',
-            # 'user_who_submitted',
-            # 'files',
+            'user_who_submitted',
+            'files',
         )
