@@ -11,7 +11,7 @@ Para rodar o sistema no seu computador, você deverá ter os programas abaixo in
 O Python já vem instalado no sistema.
 #### Windows
 Instale o [Python 3.6](https://www.python.org/downloads/windows/). Escolha entre as versões 32-bit ou 64-bit de acordo com as configurações do seu sistema.
-Na primeira janela de instalação, selecione a opção **Add Python 3.4 to PATH** e continue a instalação normalmente.
+Na primeira janela de instalação, selecione a opção **Add Python 3.6 to PATH** e continue a instalação normalmente.
 
 ### 1.2. PIP
 O pip já vem instalado para as versões do Python 2.7.9 ou superior (na série Python2) e Python 3.4 (ou superior).
