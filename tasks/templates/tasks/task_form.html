@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block head_title %}
+    {% if novo_objeto %}
+        Cadastrar Task - {{ block.super }}
+    {% else %}
+        Editar Task - {{ block.super }}
+    {% endif %}
+{% endblock %}
+
+{% block conteudo %}
+    <div class="row">
+        <!-- Basic forms -->
+        <div class="col-lg-8">
+            <div class="module">
+                <div class="module-header"><h4>Task</h4></div>
+                <div class="module-content">
+
+                    <form method="post" class="form-horizontal">
+                    {% csrf_token %}
+
+                        {{ form.as_p }}
+
+                        <div class="form-group">
+                            <div class="col-lg-offset-4 col-lg-4">
+                                <button class="btn btn-primary" type="submit">Salvar</button>
+                                <a href="{% url 'tasks:list' %}"><button type="button" id="back-btn" class="btn btn-default">Cancelar</button></a>
+
+                                
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <!-- /Basic forms -->
+    </div>
+{% endblock %}
